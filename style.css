@@ -5,6 +5,7 @@
     src: url("fonts/Syne-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
     src: url("fonts/GeistMono-VariableFont.woff2") format("woff2");
     font-weight: 100 900;
     font-style: normal;
+    font-display: swap;
 }
 
 /* ---------- Base ---------- */
@@ -23,10 +25,22 @@ body {
 
     font-family: "Geist Mono", monospace;
     font-size: 20px;
-    line-height: 1.25;
+    line-height: 1.75;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
-/* ---------- Headings ---------- */
+/* ---------- Layout ---------- */
+
+main {
+    max-width: 38rem;
+    margin: 7rem auto;
+    padding: 0 2rem;
+}
+
+/* ---------- Typography ---------- */
 
 h1,
 h2,
@@ -36,4 +50,56 @@ h5,
 h6 {
     font-family: "Syne", sans-serif;
     font-weight: 700;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 2.8rem;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.75rem;
+}
+
+.tagline {
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: -0.01em;
+    margin: 4rem 0 1rem;
+}
+
+p {
+    margin: 0 0 1.6rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 700px) {
+    body {
+        font-size: 18px;
+    }
+
+    main {
+        margin: 3rem auto;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
 }
