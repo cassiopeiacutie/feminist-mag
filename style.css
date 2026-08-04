@@ -1,9 +1,33 @@
-/* ---------- Fonts ---------- */
+ /* ---------- Fonts ---------- */
 
 @font-face {
     font-family: "Syne";
     src: url("Syne-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Syne";
+    src: url("Syne-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Syne";
+    src: url("Syne-Bold.woff2") format("woff2");
     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Syne";
+    src: url("Syne-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
@@ -15,6 +39,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 
 /* ---------- Base ---------- */
 
@@ -32,6 +57,7 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+
 /* ---------- Layout ---------- */
 
 main {
@@ -40,16 +66,16 @@ main {
     padding: 0 2rem;
 }
 
+
 /* ---------- Typography ---------- */
 
-title, 
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Syne-Regular", sans-serif;
+    font-family: "Syne", sans-serif;
     font-weight: 700;
     line-height: 1.1;
 }
@@ -61,6 +87,7 @@ h1 {
 }
 
 .tagline {
+    display: block;
     font-style: italic;
     margin-bottom: 3rem;
 }
@@ -84,6 +111,7 @@ a {
 a:hover {
     opacity: 0.7;
 }
+
 
 /* ---------- Mobile ---------- */
 
