@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Syne";
-    src: url("Syne-Bold.woff2") format("woff2");
+    src: url("Syne-Regular.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -42,13 +42,14 @@ main {
 
 /* ---------- Typography ---------- */
 
+title, 
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Syne", sans-serif;
+    font-family: "Syne-Regular", sans-serif;
     font-weight: 700;
     line-height: 1.1;
 }
